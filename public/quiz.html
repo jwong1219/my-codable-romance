@@ -97,7 +97,7 @@
             (Agree)
         </div>
         <div class="form-group" id="set7">
-          <label for="7">In a discussion, truth shoul db emore important than other people's sensitivites.</label><br>
+          <label for="7">In a discussion, truth should be more important than other people's sensitivites.</label><br>
           (Disagree)  
           <input type="radio" name="7" value="1">  |      
           <input type="radio" name="7" value="2">  |
@@ -117,7 +117,7 @@
             (Agree)
         </div>
         <div class="form-group" id="set9">
-          <label for="9">You think that everyone's vies should be respected regardless fo whether they are supported by facts or not.</label><br>
+          <label for="9">You think that everyone's views should be respected regardless fo whether they are supported by facts or not.</label><br>
           (Disagree)  
           <input type="radio" name="9" value="1">  |      
           <input type="radio" name="9" value="2">  |
@@ -138,6 +138,12 @@
         </div>
         <button type="submit" id="submit" class="btn btn-default">Submit</button>
       </form>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a href="/api/results">Results API</a>
     </div>
   </div>
 
@@ -167,10 +173,10 @@
     event.preventDefault();
     if($("#name").val() && $("#image").val()) {
       var userName = $("#name").val().trim();
-      var image = $("#image").val().trim();
+      var userImage = $("#image").val().trim();
       $("#message").addClass("invisible");
       var arr2 = [];
-      for (var i=1; i<10; i++) {
+      for (var i=1; i<11; i++) {
         let x = $("input:radio[name ="+ i.toString() +"]:checked").val()
         console.log(x);
         arr2.push(parseInt(x));
@@ -179,6 +185,7 @@
       
       var result = {
         name: userName,
+        image: userImage,
         answers: arr2,
       }
 
