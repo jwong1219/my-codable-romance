@@ -1,10 +1,13 @@
 var answArr = [
   {name: "Justin",
-  results: [2,3,4]},
+  image: "",
+  results: [3,3,3,3,3,3,3,3,3,3]},
   {name: "Sandra",
-  results: [1,5,3]},
+  image: "",
+  results: [1,5,3,1,5,3,1,5,3,1]},
   {name: "Moose",
-  results: [5,3,1]}
+  image: "",
+  results: [5,3,1,5,3,1,5,3,1,5]}
 ];
 
 module.exports = answArr;

@@ -5,26 +5,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .glyphicon-random {
+      top: 9px;
+    }
+  </style>
 </head>
 <body>
   <div class="row">
     <div class="col-xs-12">
       <div class="container">
         <div class="jumbotron text-center">
-          My Codable Romance
+          <h1><span class='glyphicon glyphicon-random'></span><span>  My Codable Romance</span></h1>
         </div>
       </div>
     </div>
   </div> 
   <div class="row">
     <div class="col-xs-12 text-center">
+      
       <form>
+        <div id="message"></div><br>
         <div class="form-group">
-          <label for="name">Name: </label>
+          <label for="name">Name:* </label>
           <input type="text" name="name" id="name" placeholder = "John Doe">
         </div>
+        <div class="form-group">
+          <label for="image">Image Upload:* </label>
+          <input type="text" name="image" id="image" placeholder = "">
+        </div><hr>
+        <h2>The Quiz</h2><hr>
         <div class="form-group" id="set1">
-          <label for="1">Question 1</label><br>
+          <label for="1">Your mind is always buzzing with unexplored ideas and plans.</label><br>
           (Disagree)  
           <input type="radio" name="1" value="1">  |      
           <input type="radio" name="1" value="2">  |
@@ -34,7 +47,7 @@
             (Agree)
         </div>
         <div class="form-group" id="set2">
-          <label for="2">Question 2</label><br>
+          <label for="2">Generally speaking, you rely more on your experience than your imagination.</label><br>
           (Disagree)  
           <input type="radio" name="2" value="1">  |      
           <input type="radio" name="2" value="2">  |
@@ -44,7 +57,7 @@
             (Agree)
         </div>
         <div class="form-group" id="set3">
-          <label for="3">Question 3</label><br>
+          <label for="3">You find it easy to stay relaxed and focued even when there is some pressure</label><br>
           (Disagree)  
           <input type="radio" name="3" value="1">  |      
           <input type="radio" name="3" value="2">  |
@@ -53,53 +66,141 @@
           <input type="radio" name="3" value="5">  |
             (Agree)
         </div>
+        <div class="form-group" id="set4">
+          <label for="4">You rarely do something just out of sheer curiosity</label><br>
+          (Disagree)  
+          <input type="radio" name="4" value="1">  |      
+          <input type="radio" name="4" value="2">  |
+          <input type="radio" name="4" value="3" checked>  |
+          <input type="radio" name="4" value="4">  |
+          <input type="radio" name="4" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set5">
+          <label for="5">People can rarely upset you.</label><br>
+          (Disagree)  
+          <input type="radio" name="5" value="1">  |      
+          <input type="radio" name="5" value="2">  |
+          <input type="radio" name="5" value="3" checked>  |
+          <input type="radio" name="5" value="4">  |
+          <input type="radio" name="5" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set6">
+          <label for="6">It is often difficult for you to relate to other people's feelings.</label><br>
+          (Disagree)  
+          <input type="radio" name="6" value="1">  |      
+          <input type="radio" name="6" value="2">  |
+          <input type="radio" name="6" value="3" checked>  |
+          <input type="radio" name="6" value="4">  |
+          <input type="radio" name="6" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set7">
+          <label for="7">In a discussion, truth shoul db emore important than other people's sensitivites.</label><br>
+          (Disagree)  
+          <input type="radio" name="7" value="1">  |      
+          <input type="radio" name="7" value="2">  |
+          <input type="radio" name="7" value="3" checked>  |
+          <input type="radio" name="7" value="4">  |
+          <input type="radio" name="7" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set8">
+          <label for="8">You rarely get carried away by fantasies and ideas.</label><br>
+          (Disagree)  
+          <input type="radio" name="8" value="1">  |      
+          <input type="radio" name="8" value="2">  |
+          <input type="radio" name="8" value="3" checked>  |
+          <input type="radio" name="8" value="4">  |
+          <input type="radio" name="8" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set9">
+          <label for="9">You think that everyone's vies should be respected regardless fo whether they are supported by facts or not.</label><br>
+          (Disagree)  
+          <input type="radio" name="9" value="1">  |      
+          <input type="radio" name="9" value="2">  |
+          <input type="radio" name="9" value="3" checked>  |
+          <input type="radio" name="9" value="4">  |
+          <input type="radio" name="9" value="5">  |
+            (Agree)
+        </div>
+        <div class="form-group" id="set10">
+          <label for="10">You feel more energetic after spending time with a group of people.</label><br>
+          (Disagree)  
+          <input type="radio" name="10" value="1">  |      
+          <input type="radio" name="10" value="2">  |
+          <input type="radio" name="10" value="3" checked>  |
+          <input type="radio" name="10" value="4">  |
+          <input type="radio" name="10" value="5">  |
+            (Agree)
+        </div>
         <button type="submit" id="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
   </div>
 
-  <script type="text/javascript">
-    var answArr = [[2,3,4],[1,5,3],[5,3,1]];
+  <div class="modal fade" id="resultModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+          <h4 class="modal-title text-center">Your Results!</h4>
+        </div>
+        <div class="modal-body text-center" id="results">
+          
 
-    $("#submit").on("click", function() {
-      event.preventDefault();
+        </div>
+        <div class="modal-footer" id="modal-footer">
+          <span class="text-center" id="sent"></span>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" id="contact" class="btn btn-primary">Contact</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<script type="text/javascript">
+
+  $("#submit").on("click", function() {
+    event.preventDefault();
+    if($("#name").val() && $("#image").val()) {
+      var userName = $("#name").val().trim();
+      var image = $("#image").val().trim();
+      $("#message").addClass("invisible");
       var arr2 = [];
-      for (var i=1; i<4; i++) {
+      for (var i=1; i<10; i++) {
         let x = $("input:radio[name ="+ i.toString() +"]:checked").val()
         console.log(x);
         arr2.push(parseInt(x));
       }
       console.log(arr2);
-      // for (index1 in answArr) {
-      //   var sum = 0;
-      //   for (index2 in answArr[index1]) {
-      //     sum += Math.abs(answArr[index1][index2] - arr2[index2]);
-      //   }
-      //   if(!closestDiff){
-      //     closest = index1;
-      //     closestDiff = sum;
-      //   }
-      //   else {
-      //     if (sum < closestDiff) {
-      //       closest = index1;
-      //       closestDiff = sum;
-      //     }
-      //   }
-       
-      // }
-
+      
       var result = {
-        name: $("#name").val().trim(),
+        name: userName,
         answers: arr2,
       }
 
       console.log(result);
 
-      $.post("/api/results", result);
+      $.post("/api/results", result, function(response) {
+        console.log(response);
+        $("#results").html("<h2><span class='glyphicon glyphicon-heart'></span>  " + userName + ", you matched with " + response.name + "!  <span class='glyphicon glyphicon-heart'></span>");
+        $("#sent").empty();
+        $("#resultModal").modal('show');
+        console.log(response);
+      });
+    }
+    else {
+      $("#message").text("You must enter your name and email");
+      $("#message").removeClass("invisible");
+    }
+  }); 
 
-    });
-    
-
-  </script>
+  $("#contact").on("click", function() {
+    $("#sent").append("Notification Sent!");
+  })
+</script>
 </body>
 </html>
