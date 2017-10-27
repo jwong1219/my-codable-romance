@@ -25,7 +25,7 @@ function compareQuizzes(app) {
         // console.log("data: " + quizData[index1].answers[index2]);
         // console.log("user: " + newUser.answers[index2]);
         sum += Math.abs(parseInt(quizData[index1].answers[index2]) - parseInt(newUser.answers[index2]));
-        console.log({sum});
+        // console.log({sum});
       }
       //if there is not already a closest match, this must be the closest
       if(!closest){
@@ -39,11 +39,11 @@ function compareQuizzes(app) {
           closestDiff = sum;
         }
       }
-      console.log(quizData[index1].name);
-      console.log({sum});
-      console.log(quizData[closest].name); 
-      console.log({closestDiff});
-      console.log("____________________");
+      // console.log(quizData[index1].name);
+      // console.log({sum});
+      // console.log(quizData[closest].name); 
+      // console.log({closestDiff});
+      // console.log("____________________");
     }
     quizData.push(newUser);
     response.json(quizData[closest]);
