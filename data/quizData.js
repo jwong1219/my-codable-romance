@@ -13,39 +13,39 @@ var answArr = [
 characters =[
 {
   name: "Eric Cartman",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/eric-cartman.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/eric-cartman.png",
   answers:[]
 },{
   name: "Stan Marsh",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/stan-marsh.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/stan-marsh.png",
   answers: [],
 },{
   name: "Kyle Broflovski",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/kyle-broflovski.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/kyle-broflovski.png",
   answers: [],
 },{
   name: "Kenny McCormick",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/kenny-mccormick.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/kenny-mccormick.png",
   answers: []
 },{
   name: "Butters Stotch",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/butters-stotch.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/butters-stotch.png",
   answers: []
 },{
   name: "Wendy Testaburger",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/wendy-testaburger.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/wendy-testaburger.png",
   answers: []
 },{
   name: "Token Black",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/token-black.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/token-black.png",
   answers: []
 },{
   name: "Bebe Stevens",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/kids/bebe-stevens.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/kids/bebe-stevens.png",
   answers: []
 },{
   name: "Heidi Turner",
-  image: "http://southparkstudios.mtvnimages.com/shared/characters/alter-egos/alter-egos-heidi-turner-w-hat.png",
+  image: "https://southparkstudios.mtvnimages.com/shared/characters/alter-egos/alter-egos-heidi-turner-w-hat.png",
   answers: []
 
 }];
